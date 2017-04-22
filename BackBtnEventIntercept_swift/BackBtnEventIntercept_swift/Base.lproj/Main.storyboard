@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2eJ-NJ-lhQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9Nh-Tz-nDX">
+            <objects>
+                <navigationController id="2eJ-NJ-lhQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CBy-3U-Wqa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WZd-yK-JJo" kind="relationship" relationship="rootViewController" id="8U8-Pl-mM3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eb1-Ee-QaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1005" y="166"/>
+        </scene>
+        <!--点击push-->
+        <scene sceneID="iSq-tg-61W">
+            <objects>
+                <viewController id="WZd-yK-JJo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TPA-0g-Znb"/>
+                        <viewControllerLayoutGuide type="bottom" id="teu-uD-zOT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bUI-hp-mt3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="点击push" id="EA0-UH-SQY">
+                        <barButtonItem key="rightBarButtonItem" title="push" id="OTd-XR-yw9">
+                            <connections>
+                                <segue destination="8bU-oA-Tkd" kind="push" id="qV8-3o-1ZV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Krd-74-D2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-245" y="174"/>
+        </scene>
+        <!--你妹的-->
+        <scene sceneID="yNl-hx-I7j">
+            <objects>
+                <viewController id="8bU-oA-Tkd" customClass="ViewController" customModule="BackBtnEventIntercept_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YOf-nV-hga"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Bl-y5-C5C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8aL-05-5hf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="你妹的" id="U4Z-ZF-Mcn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elP-Wh-bvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="173"/>
+        </scene>
+    </scenes>
+</document>
